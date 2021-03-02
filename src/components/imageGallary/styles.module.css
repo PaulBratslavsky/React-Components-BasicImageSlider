@@ -1,0 +1,66 @@
+.imageGallary {
+  position: relative;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto 25%;
+  grid-gap: 16px;
+  padding: 1rem;
+
+  background: whitesmoke;
+}
+
+.imageShowcase {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.button {
+  border: none;
+  background: #494747;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+svg {
+  font-size: 3rem;
+  color: #ececec;
+  display: block;
+  transition: color 0.25s ease-in-out;
+}
+
+svg:hover {
+  color: white;
+}
+
+.nextButton {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.previousButton {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
